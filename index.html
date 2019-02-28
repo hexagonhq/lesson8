@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<form class="form" action="http://nickblack.pro/send.php" method="POST" name="form1">
+		<div class="field-group">
+			<label class="field-group__label is-required">Name:</label>
+			<input class="field-group__input" type="text" name="fname" maxlength="15" required>
+		</div>
+		<div class="field-group">
+			<label class="field-group__label">Last Name:</label>
+			<input class="field-group__input" type="text" name="sname" maxlength="15">
+		</div>
+		<div class="field-group">
+			<label class="field-group__label">Age:</label>
+			<input class="field-group__input" type="number" name="age" min="1" max="100">
+		</div>
+		<div class="field-group">
+			<label class="field-group__label">Email:</label>
+			<input class="field-group__input" type="email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+		</div>
+		<div class="field-group">
+			<label class="field-group__label">Date of Birth:</label>
+			<input class="field-group__input" type="date" name="bday">
+		</div>
+		<div class="field-group">
+			<label class="field-group__label is-required">Phone:</label>
+			<input class="field-group__input" type="tel" name="phone" maxlength="13" required>
+		</div>
+		<div class="field-group">
+			<label class="field-group__label is-required">Recipient Email:</label>
+			<input class="field-group__input" type="email" name="mymail" required readonly value="runshacking@gmail.com">
+		</div>
+		<div class="form-button">
+			<input class="form-button__send" type="submit" value="Send">
+		</div>
+	</form>
+</body>
+</html>
